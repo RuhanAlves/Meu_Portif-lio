@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruhan Alves</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+
+    <!--font-family: "Inter", sans-serif;-->
+    <!--font-family: "Sora", sans-serif;-->
+</head>
+
+<body>
+
+    <div class="simbolos-fundo" aria-hidden="true">
+        <span>&lt;/&gt;</span>
+        <span>{ }</span>
+        <span>;</span>
+        <span>( )</span>
+        <span>0 1</span>
+        <span> C# </span>
+        <span>*</span>
+        <span>+</span>
+    </div>
+
+    <button id="botao-menu" type="button" aria-label="Abrir menu" aria-controls="menu-navegacao" aria-expanded="false"> <span></span> <span></span> <span></span> </button>
+
+    <aside> 
+
+        <nav id="menu-navegacao"> <a href="#inicio"> <img src="img/casa (1).png" alt=""> <span>Início</span> </a>
+
+            <a href="#sobre">
+                <img src="img/User.png" alt="">
+                <span>Sobre Mim</span>
+            </a>
+
+            <a href="#habilidades">
+                <img src="img/codigo.png" alt="">
+                <span>Habilidades</span>
+            </a>
+
+            <a href="#projetos">
+                <img src="img/pasta-aberta.png" alt="">
+                <span>Projetos</span>
+            </a>
+
+            <a href="#contato">
+                <img src="img/envelope.png" alt="">
+                <span>Entre em contato</span>
+            </a>
+
+            <a href="#" id="alternar-tema" aria-label="Alternar tema">
+                <img id="icone-tema" src="img/lua-crescente.png" alt="Ativar modo claro">
+                <span>Tema</span>
+            </a>
+        </nav>
+
+        <div id="trevo">
+            <svg viewBox="0 0 2000 1900">
+                <path class="trevo_forma" transform="translate(0,0)" fill="rgb(0,0,0)"
+                    d="M 1021.89 290.297 C 1077.31 237.553 1136 207.355 1214.64 209.273 C 1271.3 210.654 1326.19 230.467 1365.78 272.169 C 1404.14 312.752 1424.5 367.102 1422.25 422.904 C 1421.14 458.232 1411.63 490.031 1396.4 521.739 C 1380.2 554.974 1359.63 585.891 1335.23 613.669 C 1250.09 712.4 1123.4 791.519 1097.12 932.606 C 1218.36 894.165 1288.11 793.733 1361.3 698.03 C 1414.58 628.361 1493.12 572.428 1581.5 562.361 C 1625.39 556.887 1667.51 560.251 1707.52 581.173 C 1753.24 605.115 1787.48 646.348 1802.63 695.686 C 1817.51 744.093 1812.11 796.467 1787.66 840.818 C 1778.95 856.906 1770.47 868.263 1759.34 882.333 C 1848.58 938.952 1894.36 1016.48 1863.32 1122.89 C 1858.45 1135.83 1854.56 1144.31 1848.15 1156.78 C 1846.05 1158.41 1836.89 1173.92 1833.96 1177.46 C 1794.31 1225.87 1741.55 1247.61 1680.51 1250.14 C 1532.56 1256.29 1422.84 1157.02 1295.49 1100.37 C 1240.84 1076.06 1179.33 1060.94 1118.51 1061.01 C 1246.13 1248.25 1512.3 1178.17 1650.85 1383.87 C 1681.47 1429.33 1693.25 1482.26 1682.38 1536.3 C 1673.35 1581.25 1646.08 1619.79 1607.87 1644.83 C 1557.66 1677.74 1505.05 1677.93 1448.28 1666.26 C 1446.71 1677.73 1444.91 1688.31 1441.49 1699.42 C 1426.53 1746.55 1393.4 1785.76 1349.43 1808.38 C 1259.89 1855.17 1157.52 1822.5 1098.54 1744.17 C 1014.98 1633.19 1047.96 1511.93 1060.56 1386.07 C 1068.39 1307.91 1058.47 1210.64 1021.97 1140.14 C 969.857 1254.98 975.434 1354.59 993.184 1475.99 C 1007.35 1572.9 1001.36 1669.64 938.349 1749.49 C 871.5 1834.2 747.429 1858.63 660.708 1788.54 C 623.271 1758.23 599.399 1714.29 594.335 1666.39 C 589.766 1667.43 585.185 1668.42 580.593 1669.35 C 529.034 1679.8 476.364 1673.44 432.092 1643.78 C 394.513 1618.7 368.698 1579.47 360.539 1535.04 C 345.366 1455.23 378.178 1390.29 433.33 1334.85 C 569.984 1197.48 810.141 1227.97 923.343 1061.64 C 835.405 1056.76 732.158 1102.98 658.27 1145.72 C 599.192 1180.63 541.837 1214.65 475.978 1235.42 C 364.807 1270.49 232.994 1254.09 183.712 1132.52 C 181.24 1126.29 179.232 1119.35 177.224 1112.9 C 154.867 1016.36 200.107 931.591 285.531 884.529 C 249.066 838.923 228.208 793.499 235.041 733.558 C 240.5 681.895 266.586 634.624 307.384 602.462 C 353.038 566.426 407.409 556.411 463.496 564.296 C 563.408 578.342 633.786 635.762 692.434 713.626 C 747.726 787.034 800.119 859.974 881.955 904.931 C 900.79 915.278 924.539 927.028 945.12 933.031 C 914.457 789.878 802.479 715.052 709.81 613.468 C 663.623 562.838 621.815 485.957 622.074 416.513 C 622.024 376.924 633.422 338.165 654.895 304.905 C 686.107 256.976 732.202 226.147 788.188 214.584 C 851.972 201.411 918.375 214.334 972.563 250.467 C 991.913 263.396 1004.63 274.821 1021.89 290.297 z">
+
+                </path>
+            </svg>
+        </div>
+        
+    </aside>
+
+    <main>
+
+        <div class="hero" id="inicio">
+            <div class="hero_content">
+                <p class="hero_intro">Ola, eu sou</p>
+                <h1>Ruhan Alves</h1>
+                <p class="hero_subtitulo">Estudante na área de TI & Programação</p>
+                <p class="hero_resumo">Transformando problemas em soluções</p>
+                <p class="hero_disponível">Disponível para estágio <span class="online"></span></p>
+
+                <div class="botao">
+                    <a href="#projetos" class="botao botao_projetos">Projetos</a>
+                    <a href="RUHAN ALVES TEIXEIRA COSTA MADEIRA - Elaboração do Currículo - 2026.pdf" class="botao botao_cv" download> Baixar CV </a>
+                </div>
+
+            </div>
+
+            <div class="hero_image">
+                <img src="img/Foto minha.jfif" alt="">
+            </div>
+        </div>
+
+        <section class="sobre" id="sobre">
+
+            <div class="simbolos-fundo">
+                <span>&lt;/&gt;</span>
+                <span>{ }</span>
+                <span>;</span>
+                <span>( )</span>
+                <span>0 1</span>
+                <span>C#</span>
+                <span>*</span>
+                <span>+</span>
+            </div>
+
+            <div class="titulo_secao">
+                <h1 class="titulo">Sobre mim</h1>
+                <div class="traco"></div>
+            </div>
+
+            <div class="sobre_conteudo">
+                <p>
+                    Meu nome é Ruhan e sou estudante do 2º ano do curso Técnico em
+                    Informática no COTEMIG.
+                    Sou apaixonado por tecnologia e gosto de transformar ideias
+                    em soluções através da programação.
+                </p>
+
+                <p>
+                    Atualmente, venho desenvolvendo meus conhecimentos em C#, Python, HTML, CSS e MySQL,
+                    além de estudar <span>lógica de programação</span>, <span>estruturas de dados</span>,
+                    <span>redes</span>, <span>Linux</span>, <span>Windows</span> e <span>hardware</span>.
+                    Também gosto de praticar por meio de projetos e exercícios, buscando transformar o
+                    que aprendo em soluções e aprimorar minhas habilidades.
+                </p>
+            </div>
+
+            <div class="divisao"></div>
+
+        </section>
+
+        <section class="resto" id="habilidades">
+
+            <div class="simbolos-fundo">
+                <span>&lt;/&gt;</span>
+                <span>{ }</span>
+                <span>;</span>
+                <span>( )</span>
+                <span>0 1</span>
+                <span>C#</span>
+                <span>*</span>
+                <span>+</span>
+            </div>
+
+            <div class="titulo_secao">
+                <h1 class="titulo">Habilidades</h1>
+                <div class="traco"></div>
+            </div>
+
+            <div class="habilidades_container">
+
+                <div class="habilidade_card">
+
+                    <img src="img/do-sustenido.png" alt="C#">
+                    <h2>C#</h2>
+                    <p>Linguagem de programação utilizada no desenvolvimento de aplicações.</p>
+                </div>
+
+                <div class="habilidade_card">
+                    <img src="img/python.png" alt="Python">
+                    <h2>Python</h2>
+                    <p>Linguagem de programação conhecida pela simplicidade e versatilidade.</p>
+                </div>
+
+                <div class="habilidade_card">
+                    <img src="img/html5.png" alt="HTML5">
+                    <h2>HTML5</h2>
+                    <p>Linguagem de marcação utilizada para estruturar páginas web.</p>
+                </div>
+
+                <div class="habilidade_card">
+                    <img src="img/css-3.png" alt="CSS3">
+                    <h2>CSS3</h2>
+                    <p>Linguagem utilizada para estilizar e definir a apresentação de páginas web.</p>
+                </div>
+
+                <div class="habilidade_card">
+                    <img src="img/mysql.png" alt="MySQL">
+                    <h2>MySQL</h2>
+                    <p>Sistema de gerenciamento de banco de dados utilizado para consultar e manipular
+                        dados relacionais.</p>
+                </div>
+
+                <div class="habilidade_card">
+                    <img src="img/js.png" alt="JavaScript">
+                    <h2>JavaScript</h2>
+                    <p>Linguagem de programação utilizada para adicionar interatividade e dinamismo às
+                        páginas web</p>
+                </div>
+
+            </div>
+
+            <div class="titulo_secao">
+                <h1 class="titulo">SoftSkills</h1>
+                <div class="traco"></div>
+            </div>
+
+            <div class="softskills">
+
+                <div class="soft_esquerda">
+                    <h2>Boa comunicação</h2>
+                    <p>
+                        Facilidade para transmitir ideias, ouvir e trabalhar em conjunto.
+                    </p>
+
+                    <h2>Trabalho em equipe</h2>
+                    <p>
+                        Gosto de colaborar e trocar conhecimentos para alcançar um objetivo.
+                    </p>
+
+                    <h2>Resolução de problemas</h2>
+                    <p>
+                        Busco entender o problema e encontrar soluções de forma lógica.
+                    </p>
+                </div>
+
+                <div class="soft_direita">
+                    <h2>Organização</h2>
+                    <p>
+                        Procuro manter minhas tarefas e atividades organizadas.
+                    </p>
+
+                    <h2>Proatividade</h2>
+                    <p>
+                        Tenho iniciativa para aprender e buscar novas soluções.
+                    </p>
+
+                    <h2>Aprendizado contínuo</h2>
+                    <p>
+                        Estou sempre buscando desenvolver novos conhecimentos e habilidades.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="divisao"></div>
+
+        <section class="resto" id="projetos">
+
+            <div class="simbolos-fundo">
+                <span>&lt;/&gt;</span>
+                <span>{ }</span>
+                <span>;</span>
+                <span>( )</span>
+                <span>0 1</span>
+                <span>C#</span>
+                <span>*</span>
+                <span>+</span>
+            </div>
+
+            <div class="titulo_secao">
+                <h1 class="titulo">Projetos</h1>
+                <div class="traco"></div>
+            </div>
+
+            <div class="projetos_container">
+
+                <div class="projeto_card">
+
+                    <h2>Your Rytthm -- Landing Page</h2>
+
+                    <p>
+                        Landing page desenvolvida para um e-commerce de streetwear,
+                        com foco em identidade visual e experiência do usuário.
+                    </p>
+
+                    <h3>Habilidades utilizadas</h3>
+
+                    <div class="projeto_tecnologias">
+
+                        <div class="tooltip">
+                            <img src="img/html5.png" alt="HTML5">
+                            <span>HTML5</span>
+                        </div>
+
+                        <div class="tooltip">
+                            <img src="img/css-3.png" alt="CSS3">
+                            <span>CSS3</span>
+                        </div>
+
+                        <div class="tooltip">
+                            <img src="img/js.png" alt="JavaScript">
+                            <span>JavaScript</span>
+                        </div>
+
+                    </div>
+
+                    <a class="Ver_Projeto" href="https://ruhanalves.github.io/Landing-Page---Your-Rytthm/">Ver
+                        Projeto</a>
+
+                </div>
+
+                <div class="projeto_card">
+
+                    <h2>Your Rytthm</h2>
+
+                    <p>
+                        Uma loja de Roupas no estilo Street Wear, criada para transmitir as
+                        emoções dos artistas de música Indie através das roupas.
+                    </p>
+
+                    <h3>Habilidades utilizadas</h3>
+
+                    <div class="projeto_tecnologias">
+
+                        <div class="tooltip">
+                            <img src="img/html5.png" alt="HTML5">
+                            <span>HTML5</span>
+                        </div>
+
+                        <div class="tooltip">
+                            <img src="img/css-3.png" alt="CSS3">
+                            <span>CSS3</span>
+                        </div>
+
+                    </div>
+
+                    <a class="Ver_Projeto" href="https://ruhanalves.github.io/Your-Rytthem/">Ver Projeto</a>
+
+                </div>
+
+                <div class="projeto_card">
+
+                    <h2>Python</h2>
+
+                    <p>
+                        Meu repositório de python, criado para registrar a minha evolução nos meus estudos.
+                    </p>
+
+                    <h3>Habilidades utilizadas</h3>
+
+                    <div class="projeto_tecnologias">
+
+                        <div class="tooltip">
+                            <img src="img/python.png" alt="HTML5">
+                            <span>Python</span>
+                        </div>
+
+                    </div>
+
+                    <a class="Ver_Projeto" href="https://github.com/RuhanAlves/python-estudos">Ver Projeto</a>
+
+                </div>
+            </div>
+
+        </section>
+
+        <div class="divisao"></div>
+
+        <section class="resto" id="contato">
+            
+            <div class="simbolos-fundo">
+                <span>&lt;/&gt;</span>
+                <span>{ }</span>
+                <span>;</span>
+                <span>( )</span>
+                <span>0 1</span>
+                <span>C#</span>
+                <span>*</span>
+                <span>+</span>
+            </div>
+
+            <div class="titulo_secao">
+                <h1 class="titulo">Entre em contato</h1>
+                <div class="traco"></div>
+            </div>
+
+            <div class="contato_conteudo">
+
+                <div class="forms">
+                    <form action="">
+
+                        <input type="text" name="nome" placeholder="Seu nome:">
+
+                        <input id="telefone" type="tel" placeholder="Telefone: (XX) XXXXX-XXXX" oninput="mascara_telefone()">
+
+                        <input type="email" name="email" placeholder="Email:">
+
+                        <textarea name="mensagem" placeholder="Mensagem:"></textarea>
+
+                        <button type="submit">Enviar mensagem</button>
+
+                    </form>
+                </div>
+
+                <div class="links_rapidos">
+                    <h2>Links rápidos</h2>
+
+                    <a href="https://github.com/RuhanAlves">GITHUB <span><div class="git"></div></span></a>
+                    <a href="https://www.linkedin.com/in/ruhan-madeira-a48aa3417/">LINKEDIN <span><div class="linkedin"></div></span></a>
+                    <a href="https://mail.google.com/mail/u/1/#inbox?compose=CllgCJZbjQwxKLHGdvNcwtphVPSCjRQpxhTTXlSklhnJrtWwJzHTwZmPcWxQnpKvBWTzdcwhwRg">EMAIL <span><div class="email"></div></span></a>
+                    <a href="https://www.whatsapp.com/"> <span><div class="telefone"></div></span>+55 (31) 99846-8215</a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer class="footer">
+
+            <div class="simbolos-fundo">
+                <span>&lt;/&gt;</span>
+                <span>{ }</span>
+                <span>;</span>
+                <span>( )</span>
+                <span>0 1</span>
+                <span>C#</span>
+                <span>*</span>
+                <span>+</span>
+            </div>
+
+            <div class="footer_conteudo">
+
+                <div class="footer_identidade">
+                    <h2>Ruhan<span> Alves.</span></h2>
+                    <p>Transformando problemas em soluções.</p>
+                </div>
+
+            </div>
+
+            <div class="footer_final">
+                <p>© 2026 Ruhan Alves. Todos os direitos reservados.</p>
+                <p>Desenvolvido com <span>determinação</span> e código.</p>
+            </div>
+        </footer>
+
+    </main>
+    <!-- Incio efeitos -->
+     <div class="mouse" id="mouse">
+     </div>
+    <!-- Final efeitos -->
+</body>
+
+</html>
