@@ -1131,35 +1131,3 @@ main {
         display: none;
     }
 }
-
-/* Inicio efeitos */
-
-.mouse{
-    width: 36px;
-    height: 36px;
-
-    top: 0;
-    left: 0;
-    margin: -18px 0;
-
-    border-radius: 50%;
-    border: 2px solid var(--roxoClaro);
-
-    position: fixed;
-    z-index: 100;
-    pointer-events: none;
-    
-    opacity: 0;
-    transition: width .25s, height .25s, margin .25s, background .25s;
-}
-
-.mouse.big{
-    width: 64px;
-    height: 64px;
-
-    margin: -36px;
-
-    background: var(--lilas);
-}
-
-/* Final efeitos */
